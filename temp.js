@@ -4,17 +4,19 @@ function calculate(number){
     while (idx < 23) {
       number = number * 2;
       let temp = number.toString();
-      console.log(temp);
+      var temporary=temp;
       let t = temp.charAt(0);
       ans[idx] = t;
       if (t === '1') {
         temp = temp.replace(t, '0');
       }
-      console.log(" ==> " + temp);
+      console.log(temporary+" ==> " + temp);
       number = parseFloat(temp);
       idx++;
     }
     return ans;
   }
 
-  
+let mantissa = 0.953125;
+let ans = calculate(mantissa);
+console.log(ans);

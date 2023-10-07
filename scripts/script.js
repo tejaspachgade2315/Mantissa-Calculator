@@ -8,23 +8,24 @@ const toast = document.getElementById("toast");
 
 
 function calculate(number){
-    let idx = 0;
-    let ans = new Array(23);
-    while (idx < 23) {
-      number = number * 2;
-      let temp = number.toString();
-      console.log(temp);
-      let t = temp.charAt(0);
-      ans[idx] = t;
-      if (t === '1') {
-        temp = temp.replace(t, '0');
-      }
-      console.log(" ==> " + temp);
-      number = parseFloat(temp);
-      idx++;
+  let idx = 0;
+  let ans = new Array(23);
+  while (idx < 23) {
+    number = number * 2;
+    let temp = number.toString();
+    var temporary=temp;
+    let t = temp.charAt(0);
+    ans[idx] = t;
+    if (t === '1') {
+      temp = temp.replace(t, '0');
     }
-    return ans;
+    console.log(temporary+" ==> " + temp);
+    number = parseFloat(temp);
+    idx++;
   }
+  let resultDiv = document.getElementById("result");
+  resultDiv.textContent = ans.join("");
+}
 
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
@@ -88,6 +89,6 @@ function keyboardInputHandler(e) {
 
  
   if (e.key === "Enter") {
-    calculate(result.value);
+    calculate(res.value);
   }
 }
