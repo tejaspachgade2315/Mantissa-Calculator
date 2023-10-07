@@ -5,6 +5,7 @@ const moonIcon="assets/MoonIcon.svg";
 const themeIcon=document.getElementById("theme-icon");
 const res = document.getElementById("res");
 const toast = document.getElementById("toast");
+const result=document.getElementById("result");
 
 
 function calculate(number){
@@ -26,6 +27,8 @@ function calculate(number){
   let resultDiv = document.getElementById("result");
   resultDiv.textContent = ans.join("");
 }
+
+
 
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
