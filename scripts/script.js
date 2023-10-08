@@ -24,14 +24,20 @@ function calculate(number){
     idx++;
   }
   let resultDiv = document.getElementById("result");
+  showDiv();
   resultDiv.textContent = ans.join("");
 }
 
 function clearInput(){
   res.value="";
   result.textContent="";
+  document.getElementById("first").style.display="none";
 }
 
+function showDiv(){
+  var div=document.getElementById("first");
+  div.style.display="block";
+}
 
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
@@ -49,6 +55,8 @@ function changeTheme() {
       toast.innerHTML = "Light Mode ☀️";
     }
   }
+
+  
   
   // Displays entered value on screen.
 function liveScreen(enteredValue) {

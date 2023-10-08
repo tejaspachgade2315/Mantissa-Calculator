@@ -14,10 +14,34 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(7, 210, 199);
+    background-color: rgb(144, 238, 144);
     transition: 0.8s all;
   }
+  #tejas {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 48px;
+    color: #ff00ff;
+
+    animation: fancyAnimation 7s infinite;
+  }
   
+  @keyframes fancyAnimation {
+    0% {
+      transform: rotateY(0deg);
+      color: #ff00ff;
+    }
+    50% {
+      transform: rotateY(360deg);
+      color: #00ffff;
+    }
+    100% {
+      transform: rotateY(0deg);
+      color: #ff00ff;
+    }
+  }
+
   h1 {
     margin-bottom: 1.5%;
     color: #fff;
