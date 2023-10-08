@@ -7,7 +7,6 @@ const res = document.getElementById("res");
 const toast = document.getElementById("toast");
 const result=document.getElementById("result");
 
-
 function calculate(number){
   let idx = 0;
   let ans = new Array(23);
@@ -28,6 +27,10 @@ function calculate(number){
   resultDiv.textContent = ans.join("");
 }
 
+function clearInput(){
+  res.value="";
+  result.textContent="";
+}
 
 
 // Swaps the stylesheet to achieve dark mode.
