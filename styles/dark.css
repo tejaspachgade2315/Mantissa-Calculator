@@ -45,6 +45,15 @@
     }
   }
 
+  input[type="text"]::placeholder{
+    color:transparent;
+
+  }
+  
+  input[type="text"]::placeholder{
+    color:white;
+  }
+
 
 h1{
     margin-bottom:1.5%;

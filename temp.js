@@ -19,4 +19,4 @@ function calculate(number){
 
 let mantissa = 0.953125;
 let ans = calculate(mantissa);
-console.log(ans);
+console.log(ans.join(""));

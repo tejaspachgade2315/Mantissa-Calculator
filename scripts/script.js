@@ -105,4 +105,21 @@ function keyboardInputHandler(e) {
   if (e.key === "Enter") {
     calculate(res.value);
   }
+   //backspace for removing the last input
+   if (e.key === "Backspace") {
+    const resultInput = res.value;
+    //remove the last element in the string
+    res.value = resultInput.substring(0, res.value.length - 1);
+   }
+  
 }
+
+const input = document.getElementById('res');
+
+input.addEventListener('focus', () => {
+  input.placeholder = '';
+});
+
+input.addEventListener('blur', () => {
+  input.placeholder = 'Find mantissa of no.';
+});
