@@ -17,3 +17,5 @@ Clear button should clear input as well as result value
 This calculator deals with the mantissa of single-precision bit number i.e(23-bit). what about double-precision bit number (52 bit ) 
 
 Examine the changes on localhost
+
+Light css is yet to be improved
